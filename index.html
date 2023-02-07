@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>La trivia del saber</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Mi pantalla de Bienvenida. -->
+  <div class="divi" id="pantInicial">
+    <h1> La trivia del saber</h1>
+    <p> Ingresa tu nombre y apellido</p>
+    <input class="input" type="text" id="nombreUsuario" placeholder="Ingresa tu nombre aquí"/>
+    <button class="btnn" type="button" id=btnName onclick="showName()">¡A jugar!</button>
+  </div>
+
+  <!-- Pantalla de selección. -->
+  <div class="divi" id=selectTopic style="display:none;">
+    <h2 id="player"> Hola </h2>
+    <p> ¿Qué tema deseas jugar? </p>
+    <button class="btnn" type="button" onclick="cine()">Cine</button>
+    <button class="btnn" type="button" onclick="ciencia()">Ciencia</button> 
+  </div>
+  
+ <!-- Pregunta 1 Cine. -->
+ <div class="divi" id=pregCine1 style="display:none;">
+  <h2> Lee atentamente y responde las siguientes preguntas</h2>
+  <h3> ¿Qué actor protagonizó la pelicula Rocky?</h3>
+  <button class="btnn" type="button" onclick="EvaluarCine1(1)">Dolph Lundgren</button>
+  <button class="btnn" type="button" onclick="EvaluarCine1(2)">Sylvester Stallone</button>
+  <button class="btnn" type="button" onclick=EvaluarCine1(3)>Carl Weathers</button>
+</div>
+
+  <!-- Pregunta 2 Cine. -->
+  <div class="divi" id=pregCine2 style="display:none;">
+  <h2> Lee atentamente y responde las siguientes preguntas</h2>
+  <h3> Completa el nombre de la película "Bolt, un perro..."</h3>
+  <button class="btnn" type="button" onclick="EvaluarCine2(1)">Fuera de serie</button>
+  <button class="btnn" type="button" onclick="EvaluarCine2(2)">Superpoderoso</button>
+  <button class="btnn" type="button" onclick=EvaluarCine2(3)>Inteligente</button>
+</div>
+
+   <!-- Pregunta 3 Cine. -->
+  <div class="divi" id=pregCine3 style="display:none;">
+  <h2> Lee atentamente y responde las siguientes preguntas</h2>
+  <h3> En la película Frozen, ¿Qué poder tiene Elsa? </h3>
+  <button class="btnn" type="button" onclick="EvaluarCine3(1)">Volar</button>
+  <button class="btnn" type="button" onclick="EvaluarCine3(2)">Super Fuerza</button>
+  <button class="btnn" type="button" onclick=EvaluarCine3(3)>Congelar</button>
+</div>
+
+   <!-- Pregunta 1 Ciencia. -->
+ <div class="divi" id=pregCiencia1 style="display:none;">
+  <h2> Lee atentamente y responde las siguientes preguntas</h2>
+ <h3>¿Cuál es el órgano que bombea sangre por todo el cuerpo?</h3>
+  <button class="btnn" type="button" onclick="EvaluarCiencia1(1)">Riñones</button>
+  <button class="btnn" type="button" onclick="EvaluarCiencia1(2)">Cerebro</button>
+  <button class="btnn" type="button" onclick=EvaluarCiencia1(3)>Corazón</button>
+</div>
+
+  <!-- Pregunta 2 Ciencia. -->
+  <div class="divi" id=pregCiencia2 style="display:none;">
+  <h2> Lee atentamente y responde las siguientes preguntas</h2>
+  <h3> ¿Qué fuerza nos retiene conectado a tierra?</h3>
+  <button class="btnn" type="button" onclick="EvaluarCiencia2(1)">La gravedad</button>
+  <button class="btnn" type="button" onclick="EvaluarCiencia2(2)">La fricción</button>
+  <button class="btnn" type="button" onclick=EvaluarCiencia2(3)>La resistencia</button>
+</div>
+
+   <!-- Pregunta 3 Ciencia. -->
+  <div class="divi" id=pregCiencia3 style="display:none;">
+  <h2> Lee atentamente y responde las siguientes preguntas</h2>
+  <h3> ¿Cuántos planetas hay en el sistema solar? </h3>
+  <button class="btnn" type="button" onclick="EvaluarCiencia3(1)">9</button>
+  <button class="btnn" type="button" onclick="EvaluarCiencia3(2)">7</button>
+  <button class="btnn" type="button" onclick=EvaluarCiencia3(3)>8</button>
+</div>
+
+  <!-- Pantalla quiero resultados. -->
+  
+<div class="divi" id="quieroResultados" style="display:none;">
+  <button class=btnn type= "button" onclick= "ResultadoFinal()">Quiero ver mis resultados</button>
+  
+    </div>
+
+  <!-- Resultado final. -->
+  
+   <div class="divi" id="resultados" style="display:none;">
+     <h2>Resultados</h2>
+     <h3 id="result"></h3>
+     <button class="btnn" type="button" onclick="restart()">Jugar nuevamente</button>
+     <button class="btnn" type="button" onclick="anotherTopic()">Elegir otro tema</button>
+   </div>
+
+  <div class="footer">
+    <h2> Realizado por Silvia Falcón</h2>
+    
+  </div>
+       
+  <script src="script.js"></script>
+</body>
+
+</html>

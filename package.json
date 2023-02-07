@@ -1,0 +1,23 @@
+{
+  "name": "trivia-del-saber",
+  "version": "1.0.0",
+  "description": "Trivia para poner a prueba el conocimiento de los usuarios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilviBibi/Trivia-del-saber.git"
+  },
+  "author": "Silvia Falcon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilviBibi/Trivia-del-saber/issues"
+  },
+  "homepage": "https://github.com/SilviBibi/Trivia-del-saber#readme",
+  "dependencies": {
+    "vite": "^4.1.1"
+  }
+}
